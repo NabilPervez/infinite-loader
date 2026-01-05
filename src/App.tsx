@@ -1,71 +1,80 @@
 import { useState, useCallback } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import {
-  ClassicBar,
-  Spinner,
+  // Tier 1: Simple
   PercentCount,
-  Pulse,
-  PixelRetro,
-  LiquidFill,
-  Orbital,
-  TypingTerminal,
-  HexagonGrid,
-  BouncingBall,
-  AnimusFragment,
-  RadarSweep,
-  SheikahSlate,
-  WarpDrive,
-  TetrisStack,
-  DNAHelix,
-  D20Roll,
-  BreathBar,
+  ClassicBar,
   GlitchText,
-  NewtonsCradle,
-  TheLoom,
-  Holomap,
-  SummoningCircle,
-  ItemGet,
+  Spinner,
+  Pulse,
+
+  // Tier 2: Structured
+  PixelRetro,
+  TypingTerminal,
+  TetrisStack,
+  HexagonGrid,
+  RadarSweep,
   PipBoy,
-  TheLantern,
+
+  // Tier 3: Fluid/Physics
+  LiquidFill,
+  BouncingBall,
+  DNAHelix,
+  Orbital,
+  ThePortal,
+
+  // Tier 4: Stylized
   BlueprintBuild,
-  ComboMeter,
+  TheLantern,
   CardShuffle,
-  ThePortal
+  ItemGet,
+  ComboMeter,
+
+  // Tier 5: Complex/3D
+  SheikahSlate,
+  AnimusFragment,
+  Holomap,
+  TheLoom
 } from './components/loaders';
 import { useLongPressExit } from './hooks/useLongPressExit';
 import clsx from 'clsx';
 
+// Ordered from Least Complex to Most Complex
 const LOADERS = [
-  ClassicBar,
-  Spinner,
+  // Tier 1: Minimalist/Text
   PercentCount,
-  Pulse,
-  PixelRetro,
-  LiquidFill,
-  Orbital,
-  TypingTerminal,
-  HexagonGrid,
-  BouncingBall,
-  AnimusFragment,
-  RadarSweep,
-  SheikahSlate,
-  WarpDrive,
-  TetrisStack,
-  DNAHelix,
-  D20Roll,
-  BreathBar,
+  ClassicBar,
   GlitchText,
-  NewtonsCradle,
-  TheLoom,
-  Holomap,
-  SummoningCircle,
-  ItemGet,
+  Spinner,
+  Pulse,
+
+  // Tier 2: 2D Logic/Grids
+  PixelRetro,
+  TypingTerminal,
+  TetrisStack,
+  HexagonGrid,
+  RadarSweep,
   PipBoy,
-  TheLantern,
+
+  // Tier 3: Standard Animation/Physics
+  LiquidFill,
+  BouncingBall,
+  DNAHelix,
+  Orbital,
+  ThePortal,
+
+  // Tier 4: Artistic/Thematic
   BlueprintBuild,
-  ComboMeter,
+  TheLantern,
   CardShuffle,
-  ThePortal
+  ItemGet,
+  ComboMeter,
+
+  // Tier 5: Complex/3Dish
+  SheikahSlate,
+  AnimusFragment,
+  Holomap,
+  TheLoom
 ];
 
 function App() {
