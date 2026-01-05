@@ -22,16 +22,14 @@
   }
 }
 
-.animate-gradient-bg {
-  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
-  background-size: 400% 400%;
-  animation: var(--animate-gradient-bg);
-}
-
 body {
   margin: 0;
   padding: 0;
   overflow: hidden;
   color: white;
-  @apply animate-gradient-bg;
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  background-size: 400% 400%;
+  animation: var(--animate-gradient-bg);
+  height: 100vh;
+  width: 100vw;
 }
