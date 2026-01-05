@@ -18,7 +18,7 @@ export const BouncingBall: React.FC<LoaderProps> = ({ onComplete }) => {
 
     // Determine current bounce cycle
     const currentBounce = Math.floor(progressNormalized * bounces);
-    const bounceProgress = (progressNormalized * bounces) % 1;
+
 
     // Parabolic arc for bounce: y = 4 * h * x * (1-x)
     // We want it to hit floor (y=0) at start/end of bounce

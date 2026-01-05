@@ -5,7 +5,7 @@ export const useLongPressExit = (duration: number = 10000) => {
     const [isHolding, setIsHolding] = useState(false);
     const [holdProgress, setHoldProgress] = useState(0);
 
-    const timerRef = useRef<number | null>(null);
+
     const startTimeRef = useRef<number | null>(null);
     const animationFrameRef = useRef<number | null>(null);
 

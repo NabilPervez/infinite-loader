@@ -30,14 +30,7 @@ const LOADERS = [
 
 function App() {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const {
-    isFullscreen,
-    isHolding,
-    holdProgress,
-    enterFullscreen,
-    startHold,
-    cancelHold
-  } = useLongPressExit(3000); // 3 seconds for testing/ux, PRD said 10s but that is very long. I will stick to 10s per PRD below.
+
 
   // PRD Requirement: "hold for 10 continuous seconds"
   // Re-instantiating hook with 10000ms
