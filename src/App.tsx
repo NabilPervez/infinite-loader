@@ -10,7 +10,27 @@ import {
   Orbital,
   TypingTerminal,
   HexagonGrid,
-  BouncingBall
+  BouncingBall,
+  AnimusFragment,
+  RadarSweep,
+  SheikahSlate,
+  WarpDrive,
+  TetrisStack,
+  DNAHelix,
+  D20Roll,
+  BreathBar,
+  GlitchText,
+  NewtonsCradle,
+  TheLoom,
+  Holomap,
+  SummoningCircle,
+  ItemGet,
+  PipBoy,
+  TheLantern,
+  BlueprintBuild,
+  ComboMeter,
+  CardShuffle,
+  ThePortal
 } from './components/loaders';
 import { useLongPressExit } from './hooks/useLongPressExit';
 import clsx from 'clsx';
@@ -26,14 +46,32 @@ const LOADERS = [
   TypingTerminal,
   HexagonGrid,
   BouncingBall,
+  AnimusFragment,
+  RadarSweep,
+  SheikahSlate,
+  WarpDrive,
+  TetrisStack,
+  DNAHelix,
+  D20Roll,
+  BreathBar,
+  GlitchText,
+  NewtonsCradle,
+  TheLoom,
+  Holomap,
+  SummoningCircle,
+  ItemGet,
+  PipBoy,
+  TheLantern,
+  BlueprintBuild,
+  ComboMeter,
+  CardShuffle,
+  ThePortal
 ];
 
 function App() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-
   // PRD Requirement: "hold for 10 continuous seconds"
-  // Re-instantiating hook with 10000ms
   const longPress = useLongPressExit(10000);
 
   const handleComplete = useCallback(() => {
@@ -99,7 +137,7 @@ function App() {
           animate={{ x: 0, opacity: 1, scale: 1 }}
           exit={{ x: '-100%', opacity: 0, scale: 0.9 }}
           transition={{ duration: 0.8, ease: [0.43, 0.13, 0.23, 0.96] }}
-          className="absolute inset-0 flex items-center justify-center p-8 pointer-events-none" // prevent clicking inside loader affecting hold? No, bubbling should be fine.
+          className="absolute inset-0 flex items-center justify-center p-8 pointer-events-none"
         >
           <ActiveLoader onComplete={handleComplete} />
         </motion.div>

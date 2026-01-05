@@ -8,3 +8,25 @@ export * from './Orbital';
 export * from './TypingTerminal';
 export * from './HexagonGrid';
 export * from './BouncingBall';
+// Batch 2 (User Request)
+export * from './AnimusFragment';
+export * from './RadarSweep';
+export * from './SheikahSlate';
+export * from './WarpDrive';
+export * from './TetrisStack';
+export * from './DNAHelix';
+export * from './D20Roll';
+export * from './BreathBar';
+export * from './GlitchText';
+export * from './NewtonsCradle';
+// Batch 3 (Generated)
+export * from './TheLoom';
+export * from './Holomap';
+export * from './SummoningCircle';
+export * from './ItemGet';
+export * from './PipBoy';
+export * from './TheLantern';
+export * from './BlueprintBuild';
+export * from './ComboMeter';
+export * from './CardShuffle';
+export * from './ThePortal';
