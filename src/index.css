@@ -5,7 +5,7 @@
 }
 
 @theme {
-  --animate-gradient-bg: gradient-shift 15s ease infinite;
+  --animate-gradient-bg: gradient-shift 60s ease infinite;
 
   @keyframes gradient-shift {
     0% {
@@ -27,7 +27,8 @@ body {
   padding: 0;
   overflow: hidden;
   color: white;
-  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  /* Deep Nebula / Midnight Borealis Palette - Soothing, dark, and premium */
+  background: linear-gradient(-45deg, #020617, #1e1b4b, #312e81, #172554, #0f172a);
   background-size: 400% 400%;
   animation: var(--animate-gradient-bg);
   height: 100vh;
